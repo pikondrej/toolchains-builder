@@ -30,7 +30,10 @@ if [[ "$1" != armv5-eabi && "$1" != armv7-eabihf ]]; then
 	exit 1
 fi
 
-git clone https://github.com/bootlin/buildroot-toolchains.git buildroot
+if [ ! -d "./buildroot" ]; then
+	git clone https://github.com/bootlin/buildroot-toolchains.git buildroot
+fi
+
 cd buildroot
 git checkout toolchains.bootlin.com-stable-2018.11-1
 
