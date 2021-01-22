@@ -21,8 +21,7 @@ linux-headers   4.1.52                    GPL-2.0
 dash            0.5.10.2                  BSD-3-Clause, GPL-2.0+ (mksignames.c)
 gdb             7.12.1                    GPL-2.0+, LGPL-2.0+, GPL-3.0+, LGPL-3.0+
 
-W&H
-
+W&H - https://github.com/WuH-Sterilization/toolchains-builder
 
 uClibc:
 Added uClibc-ng backtrace (`UCLIBC_HAS_BACKTRACE`)
