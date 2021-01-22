@@ -45,5 +45,4 @@ make clean
 make
 
 cp ../"$1"-readme.txt ./"$1"--uclibc--stable-2018.11-1
-tar -cjf "$1"--uclibc--stable-2018.11-1.tar.bz2 "$1"--uclibc-backtrace--stable-2018.11-1
-mv "$1"--uclibc-backtrace--stable-2018.11-1.tar.bz2 ../
+tar -cjf ../"$1"--uclibc-backtrace--stable-2018.11-1.tar.bz2 "$1"--uclibc--stable-2018.11-1
