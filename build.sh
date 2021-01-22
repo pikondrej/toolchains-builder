@@ -35,10 +35,11 @@ if [ ! -d "./buildroot" ]; then
 fi
 
 cd buildroot
+git clean -fdx
 git checkout toolchains.bootlin.com-stable-2018.11-1
 
 cat ../"$1"-uclibc-config > ./.config
-cp ../uclibc-backatrace.fragment ./
+cp ../uclibc-backtrace.fragment ./
 
 make olddefconfig
 make clean
