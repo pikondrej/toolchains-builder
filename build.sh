@@ -34,6 +34,10 @@ if [ ! -d "./buildroot" ]; then
 	git clone https://github.com/bootlin/buildroot-toolchains.git buildroot
 fi
 
+if [ -f "$1"--uclibc-backtrace--stable-2018.11-1.tar.bz2 ]; then
+	rm "$1"--uclibc-backtrace--stable-2018.11-1.tar.bz2
+fi
+
 cd buildroot
 git clean -fdx
 git checkout toolchains.bootlin.com-stable-2018.11-1
