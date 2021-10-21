@@ -22,10 +22,11 @@ if [ "$#" -ne 1 ]; then
 	echo "Usage:" >&2
 	echo "  $0 armv5-eabi" >&2
 	echo "  $0 armv7-eabihf" >&2
+	echo "  $0 x86-i686" >&2
 	exit 1
 fi
 
-if [[ "$1" != armv5-eabi && "$1" != armv7-eabihf ]]; then
+if [[ "$1" != armv5-eabi && "$1" != armv7-eabihf && "$1" != x86-i686 ]]; then
 	echo "Unsupported platform" >&2
 	exit 1
 fi
