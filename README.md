@@ -3,16 +3,19 @@
 This repo contains the configuration to build the toolchains for W&H processor:
 * armv5-eabi
 * armv7-eabihf
+* x86-i686
 
 ## Build
 
-To build the toolchain you can simply run the script:
+To build the toolchain you can simply run the script passing the architecture name:
 ```shell
 $ ./build.sh armv5-eabi
 ```
 ```shell
 $ ./build.sh armv7-eabihf
 ```
+
+Possible values of architecture are: armv5-eabi, armv7-eabihf and x86-i686
 
 Optionally you can build the toolchains manually:
 ```shell
