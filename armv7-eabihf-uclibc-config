@@ -1,6 +1,6 @@
 BR2_arm=y
-BR2_cortex_a9=y
-BR2_ARM_ENABLE_VFP=y
+BR2_cortex_a7=y
+BR2_ARM_FPU_NEON_VFPV4=y
 BR2_WGET="wget --passive-ftp -nd -t 3 --no-check-certificate"
 BR2_HOST_DIR="$(TOPDIR)/armv7-eabihf--uclibc--stable-2021.05"
 BR2_GNU_MIRROR="http://ftp.gnu.org/pub/gnu"
