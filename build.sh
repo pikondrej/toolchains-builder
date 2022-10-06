@@ -41,7 +41,7 @@ fi
 
 cd buildroot
 git clean -fdx
-git checkout toolchains.bootlin.com-stable-2021.5
+git checkout toolchains.bootlin.com-2021.05
 
 cat ../"$1"-uclibc-config > ./.config
 cp ../uclibc-backtrace.fragment ./
@@ -52,4 +52,4 @@ make
 make sdk
 
 cp ../"$1"-readme.txt ./"$1"--uclibc--stable-2021.05
-tar -cjf ../"$1"--uclibc-backtrace--stable-2021.05.tar.bz2 "$1"--uclibc--stable-2021.5
+tar -cjf ../"$1"--uclibc-backtrace--stable-2021.05.tar.bz2 "$1"--uclibc--stable-2021.05
