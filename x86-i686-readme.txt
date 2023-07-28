@@ -1,4 +1,4 @@
-armv5-eabihf--uclibc--stable-2022.08-2
+x86-i686--uclibc--stable-2022.08-2
 
 PACKAGE         VERSION                               LICENSE
 buildroot       toolchains.bootlin.com-2022.08.2      GPL-2.0+
