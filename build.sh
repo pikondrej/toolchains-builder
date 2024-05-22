@@ -26,7 +26,7 @@ if [ "$#" -ne 1 ]; then
 	exit 1
 fi
 
-tc_tag="2022.08.2"
+tc_tag="2024.02"
 tc_dir="$1--uclibc--stable-${tc_tag}"
 tc_tar="$1--uclibc--cortex_a7--stable-${tc_tag}.tar.bz2"
 
